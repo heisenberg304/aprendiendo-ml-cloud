@@ -1,6 +1,6 @@
 # Aprendiendo ML Cloud
 
-David  
+David  Delgado
 Inicio del camino hacia ser Machine Learning Engineer (Cloud-based)
 
 ## Contenido
