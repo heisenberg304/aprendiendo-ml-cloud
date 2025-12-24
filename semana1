@@ -1,4 +1,6 @@
 Semana 1: Fundamentos de Python para Machine Learning en la Nube
+
+
   Día 1: Introducción a Python y Entorno de Trabajo en la Nube 🚀
     Objetivo principal: Familiarizarse con el entorno de Google Colab y repasar los conceptos básicos de Python (variables, tipos de datos simples y listas). Google Colab es un servicio en la nube que permite ejecutar código Python en cuadernos Jupyter sin necesidad de configuración, ofreciendo incluso acceso gratuito a GPUs
     Al final del día, David habrá configurado su entorno, ejecutado sus primeras celdas en Colab y recordado cómo manejar tipos de datos básicos en Python.
