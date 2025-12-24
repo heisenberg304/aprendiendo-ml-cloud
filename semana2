@@ -1,149 +1,149 @@
 Semana 2: POO, Buenas Prácticas y GitHub Web
 En esta semana se profundiza en Programación Orientada a Objetos en Python, buenas prácticas (PEP8) y uso de GitHub desde la interfaz web. David trabajará 6 horas diarias y solo avanzará a la siguiente etapa cuando el tutor compruebe su comprensión mediante ejercicios o mini-pruebas. Se priorizan recursos visuales en español (videos, esquemas, notebooks) y se proporcionan esquemas de código parciales como guía.
 
-
-Día 1: Introducción a POO en Python
-Objetivo: Entender el paradigma de la POO: clases, objetos, atributos y métodos.
-
-Actividades:
-Ver un video introductorio en español sobre clases y objetos (por ejemplo, “POO en Python: Clases y Objetos” en YouTube).
-Leer un breve artículo/esquema que explique cómo las clases agrupan variables y funciones
-En Google Colab, crear un notebook vacío e implementar el esqueleto de una clase simple (p.ej., class Perro: con pass). Dejar métodos vacíos (con pass) como guía para no dar solución completa.
-Definir al menos un atributo y un método (vacío) en esa clase. Dejar lugar en comentarios para que el tutor revise (por ejemplo, self.nombre = None # Completar nombre).
-
-Recursos:
-Video: “POO en Python 01. Clases y objetos” (Efrén Juárez #TurboCodigo).
-Artículo en español sobre POO (por ejemplo, “Programación Orientada a Objetos” en El Libro de Python
-Notebook colaborativo de ejemplo con definiciones básicas (en blanco o comentado).
-
-Indicadores (revisión):
-Explica qué es una clase, un objeto, atributo y método, usando un ejemplo real (p.ej. clase “Perro” con atributos “edad” y “raza”, métodos “ladrar” o “andar”
-Demuestra que puede crear un objeto de la clase en Colab (mi_perro = Perro()), y que el tutor verifica el flujo del código.
-Entiende que self representa la instancia en métodos (se revisa en clase).
-Figura: Entorno de programación en Python (ejemplo de código en un laptop).
-
-
-Día 2: Métodos especiales y atributos
-Objetivo: Aprender el método constructor (__init__), diferenciar atributos de instancia y de clase, y usar self.
-
-Actividades:
-Ver un video corto sobre el método __init__ en POO (por ejemplo en YouTube: “Init en POO Python”).
-Leer documentación o notas en español que expliquen __init__ y los atributos de instancia
-En Colab, ampliar la clase del Día 1: implementar def __init__(self, nombre, edad): que inicialice self.nombre y self.edad con valores recibidos. Usar declaraciones parciales (self.nombre = nombre # asignar nombre).
-Añadir al menos otro método sencillo (vacío) y un atributo de clase. Por ejemplo: especie = 'mamífero' como atributo de clase.
-
-Recursos:
-Video: “Python: Método init – Cómo funciona” (en español).
-Artículo/Blog: secciones de POO sobre inicialización de objetos (por ejemplo, El Libro de Python, líneas que muestran __init__ como constructor
-Esquema paso a paso: diagrama de flujo para crear objeto y asignar atributos.
-
-Indicadores (revisión):
-Escribe en español la función del constructor __init__ y la importancia de self.
-Crea en Colab un objeto con sus atributos (mi_perro = Perro("Toby", 5)) y muestra acceso a los atributos (print(mi_perro.nombre)).
-El tutor verifica que el código se ejecuta sin errores (con atributos de instancia creados correctamente).
-Fragmento de código de ejemplo en Python (para ilustrar el uso de atributos y métodos).
-
-
-Día 3: Herencia y polimorfismo
-Objetivo: Entender la herencia en POO: crear subclases que extienden una clase base.
-
-Actividades:
-Ver un video didáctico sobre herencia (p.ej. “Herencia en POO Python – Clases padre e hijo”).
-Estudiar un artículo en español o el apunte de la clase que explique los pilares de la POO, especialmente herencia y polimorfismo
-En Colab, diseñar un par de clases relacionadas: por ejemplo, class Animal con atributos genéricos (p.ej. especie), y class Perro(Animal) que herede de Animal. Dejar métodos vacíos para completar con el tutor.
-Probar la herencia: crear un objeto de la subclase (mi_perro = Perro("Labrador", 3) usando el constructor de la clase base o hija) y verificar que atributos comunes e métodos funcionan.
-
-Recursos:
-Video: “Herencia y Polimorfismo en Python – Tutorial en español”.
-Artículo: secciones de POO sobre Herencia (por ejemplo, la lista de pilares en El Libro de Python
-Esquema: diagrama UML simple mostrando clase base y subclase.
-
-Indicadores (revisión):
-Define en tus propias palabras qué es herencia en POO y cómo reutiliza código.
-Crea en el notebook dos clases (padre e hijo) con algún método sobrescrito (vacío) y demuestra que la subclase puede usar atributos del padre.
-El tutor verifica que entiendes la diferencia entre clase base y subclase, y que sabes generar un objeto de cada una.
-
-
-Día 4: Práctica integradora de OOP
-Objetivo: Consolidar conceptos de clases, objetos, atributos y herencia mediante un ejercicio práctico.
-
-Actividades:
-Diseñar en papel o pizarra un pequeño sistema de clases (por ejemplo, una jerarquía de vehículos: Vehiculo, Coche, Camion), definiendo atributos y métodos de manera esquemática.
-En un notebook de Colab, comenzar a codificar esas clases con los esqueletos necesarios: atributos inicializados en __init__, métodos en forma de pass. No resolver por completo, dejar que el tutor revise cada parte.
-Aplicar herencia: usar class Coche(Vehiculo) y mostrar cómo invocar el constructor del padre (super().__init__) en un método (completarlo con guía).
-Ejecución de ejemplo: crear instancias de cada clase y pedir al estudiante comentar qué sucede (llamada a constructor del padre, etc.).
-
-Recursos:
-Video: ejemplo práctico de diseño de clases en Python (español).
-Notebook guía con esqueleto de clases (no funcional por completo).
-Cheat sheet visual de POO (diagrama conceptual).
-
-Indicadores (revisión):
-Entrega un diseño de clases (puede ser un diagrama dibujado) que muestre correctamente la estructura propuesta.
-Código en Colab con las clases definidas (incluso si algunos métodos están vacíos) que se ejecuta (al menos la creación de objetos no da error).
-Tutor revisa y confirma comprensión de cómo la herencia se implementa en el código.
-
-
-Día 5: Buenas prácticas de código (PEP8)
-Objetivo: Aprender y aplicar los principios de estilo PEP8: nombres claros, indentación, líneas cortas, comentarios, modularidad.
-
-Actividades:
-Ver una charla o video sobre PEP8 en Python (p.ej. “PEP8 – Guía de estilo en Python”).
-Leer un artículo en español que resuma las recomendaciones clave de PEP8
-Identificar problemas comunes como líneas muy largas o nombres poco claros
-Revisar el código escrito en días anteriores y modificarlo según PEP8: renombrar variables con snake_case, ajustar indentación, añadir comentarios y docstrings donde faltan (puede ser guiado, sin copiar código final).
-Instalar y probar un linter o formatter (por ejemplo, autopep8 o el formateador de Colab) para corregir automáticamente algunos problemas.
-
-Recursos:
-Artículo “Python PEP8: Escribiendo Código Fácil de Leer”
-Chequeo interactivo: notebook con fragmentos mal formateados para corregir (presentando errores comunes detectados por linters).
-Video breve sobre convenciones de nombres en Python (camelCase vs snake_case)
-
-Indicadores (revisión):
-El código sigue las convenciones de PEP8 (nombres en snake_case, indentación de 4 espacios, máximos ~79 caracteres por línea, comentarios donde corresponda).
-Realiza al menos una mini-prueba: por ejemplo, pegar código con errores de estilo y usar autopep8 para ver qué cambia.
-El tutor verifica que David puede identificar y corregir 3 problemas de estilo (por ejemplo, renombrar una variable genérica, dividir línea muy larga, agregar docstring breve).
-
-
-Día 6: Introducción a GitHub (interfaz web)
-Objetivo: Manejar GitHub desde la web: crear repositorio, gestionar ramas, commits y README.
-
-Actividades:
-Ver un tutorial en español sobre GitHub básico (por ejemplo, “Introducción a GitHub para principiantes” en YouTube).
-Seguir los pasos de la guía Hola mundo de GitHub en español para entender qué es un repositorio (una carpeta de proyecto) y qué son archivos README.
-En la web de GitHub, practicar: crear una rama nueva (branch) en el repositorio que ya existe. Leer la descripción: “La ramificación te permite tener versiones diferentes de un repositorio
-Subir (mediante la web) el notebook que ha preparado (o parte de él) como un nuevo archivo en la rama. Escribir un mensaje de commit claro (p.ej., “Agrega notebook de clases OOP con ejercicio”).
-Modificar el archivo README.md desde la interfaz web para documentar brevemente el proyecto (solo texto, sin resolver el código).
-
-Recursos:
-Guía de inicio “Hola Mundo” de GitHub (documentación oficial en español)
-Video tutorial práctico de GitHub (uso de UI web, búsqueda en español).
-Diagrama/imagen (esquemático) del flujo básico: repo → rama → commit → merge.
-
-Indicadores (revisión):
-El repositorio de GitHub contiene dos ramas (p.ej. main y otra) y al menos un commit en la rama nueva con el notebook agregado.
-El tutor verifica (en GitHub) que la rama nueva existe y que el último commit incluye el archivo subido con mensaje descriptivo.
-El README contiene un párrafo en Markdown explicando el ejercicio realizado (sin resolverlo), revisado por el tutor.
-
-
-Día 7: Integración final y entrega
-Objetivo: Consolidar todo lo aprendido: crear un notebook con POO en Colab y versionarlo en GitHub siguiendo buenas prácticas.
-
-Actividades:
-En Colab, desarrollar un ejemplo final aplicando clases e herencia: por ejemplo, simular animales en un zoológico usando clases creadas anteriormente. Evitar soluciones completas; incluir comentarios que indiquen dónde el tutor puede ayudar a completar.
-Verificar que el código respeta PEP8 (nombres y estilo). Añadir comentarios explicativos breves y limpieza de líneas largas.
-Usar la interfaz web de GitHub para subir este notebook final a la rama del repositorio. Crear un pull request (PR) desde la rama nueva a main (el tutor puede ayudar a finalizar la fusión después de la revisión).
-Fusionar el PR en main (con el tutor). Actualizar el README final con una descripción del ejemplo ejecutado (nuevamente en español, formato Markdown).
-
-Recursos:
-Ejemplo de notebook final (plantilla con estructura de clases, sin resolver del todo).
-Checklist de entrega: items de comprobación antes del merge (por ejemplo, “¿Se sigue PEP8?”, “¿Comentarios claros?”, etc.).
-Video corto sobre pull requests en la web de GitHub (español) y flujo de trabajo de rama a main.
-
-Indicadores (revisión):
-El notebook final se ejecuta en Colab (todo su código corre sin errores).
-El repositorio GitHub tiene el notebook documentado, un PR marcado como fusionado y un README actualizado. El tutor confirma que el proceso de crear/fusionar ramas se entendió correctamente.
-Demuestra conocimiento de buenas prácticas: el código en main del repo sigue PEP8, variables con nombres significativos y estructura modular.
+  
+  Día 1: Introducción a POO en Python
+  Objetivo: Entender el paradigma de la POO: clases, objetos, atributos y métodos.
+    
+    Actividades:
+    Ver un video introductorio en español sobre clases y objetos (por ejemplo, “POO en Python: Clases y Objetos” en YouTube).
+    Leer un breve artículo/esquema que explique cómo las clases agrupan variables y funciones
+    En Google Colab, crear un notebook vacío e implementar el esqueleto de una clase simple (p.ej., class Perro: con pass). Dejar métodos vacíos (con pass) como guía para no dar solución completa.
+    Definir al menos un atributo y un método (vacío) en esa clase. Dejar lugar en comentarios para que el tutor revise (por ejemplo, self.nombre = None # Completar nombre).
+    
+    Recursos:
+    Video: “POO en Python 01. Clases y objetos” (Efrén Juárez #TurboCodigo).
+    Artículo en español sobre POO (por ejemplo, “Programación Orientada a Objetos” en El Libro de Python
+    Notebook colaborativo de ejemplo con definiciones básicas (en blanco o comentado).
+    
+    Indicadores (revisión):
+    Explica qué es una clase, un objeto, atributo y método, usando un ejemplo real (p.ej. clase “Perro” con atributos “edad” y “raza”, métodos “ladrar” o “andar”
+    Demuestra que puede crear un objeto de la clase en Colab (mi_perro = Perro()), y que el tutor verifica el flujo del código.
+    Entiende que self representa la instancia en métodos (se revisa en clase).
+    Figura: Entorno de programación en Python (ejemplo de código en un laptop).
+    
+  
+  Día 2: Métodos especiales y atributos
+  Objetivo: Aprender el método constructor (__init__), diferenciar atributos de instancia y de clase, y usar self.
+    
+    Actividades:
+    Ver un video corto sobre el método __init__ en POO (por ejemplo en YouTube: “Init en POO Python”).
+    Leer documentación o notas en español que expliquen __init__ y los atributos de instancia
+    En Colab, ampliar la clase del Día 1: implementar def __init__(self, nombre, edad): que inicialice self.nombre y self.edad con valores recibidos. Usar declaraciones parciales (self.nombre = nombre # asignar nombre).
+    Añadir al menos otro método sencillo (vacío) y un atributo de clase. Por ejemplo: especie = 'mamífero' como atributo de clase.
+    
+    Recursos:
+    Video: “Python: Método init – Cómo funciona” (en español).
+    Artículo/Blog: secciones de POO sobre inicialización de objetos (por ejemplo, El Libro de Python, líneas que muestran __init__ como constructor
+    Esquema paso a paso: diagrama de flujo para crear objeto y asignar atributos.
+    
+    Indicadores (revisión):
+    Escribe en español la función del constructor __init__ y la importancia de self.
+    Crea en Colab un objeto con sus atributos (mi_perro = Perro("Toby", 5)) y muestra acceso a los atributos (print(mi_perro.nombre)).
+    El tutor verifica que el código se ejecuta sin errores (con atributos de instancia creados correctamente).
+    Fragmento de código de ejemplo en Python (para ilustrar el uso de atributos y métodos).
+  
+  
+  Día 3: Herencia y polimorfismo
+  Objetivo: Entender la herencia en POO: crear subclases que extienden una clase base.
+    
+    Actividades:
+    Ver un video didáctico sobre herencia (p.ej. “Herencia en POO Python – Clases padre e hijo”).
+    Estudiar un artículo en español o el apunte de la clase que explique los pilares de la POO, especialmente herencia y polimorfismo
+    En Colab, diseñar un par de clases relacionadas: por ejemplo, class Animal con atributos genéricos (p.ej. especie), y class Perro(Animal) que herede de Animal. Dejar métodos vacíos para completar con el tutor.
+    Probar la herencia: crear un objeto de la subclase (mi_perro = Perro("Labrador", 3) usando el constructor de la clase base o hija) y verificar que atributos comunes e métodos funcionan.
+    
+    Recursos:
+    Video: “Herencia y Polimorfismo en Python – Tutorial en español”.
+    Artículo: secciones de POO sobre Herencia (por ejemplo, la lista de pilares en El Libro de Python
+    Esquema: diagrama UML simple mostrando clase base y subclase.
+    
+    Indicadores (revisión):
+    Define en tus propias palabras qué es herencia en POO y cómo reutiliza código.
+    Crea en el notebook dos clases (padre e hijo) con algún método sobrescrito (vacío) y demuestra que la subclase puede usar atributos del padre.
+    El tutor verifica que entiendes la diferencia entre clase base y subclase, y que sabes generar un objeto de cada una.
+    
+    
+  Día 4: Práctica integradora de OOP
+  Objetivo: Consolidar conceptos de clases, objetos, atributos y herencia mediante un ejercicio práctico.
+    
+    Actividades:
+    Diseñar en papel o pizarra un pequeño sistema de clases (por ejemplo, una jerarquía de vehículos: Vehiculo, Coche, Camion), definiendo atributos y métodos de manera esquemática.
+    En un notebook de Colab, comenzar a codificar esas clases con los esqueletos necesarios: atributos inicializados en __init__, métodos en forma de pass. No resolver por completo, dejar que el tutor revise cada parte.
+    Aplicar herencia: usar class Coche(Vehiculo) y mostrar cómo invocar el constructor del padre (super().__init__) en un método (completarlo con guía).
+    Ejecución de ejemplo: crear instancias de cada clase y pedir al estudiante comentar qué sucede (llamada a constructor del padre, etc.).
+    
+    Recursos:
+    Video: ejemplo práctico de diseño de clases en Python (español).
+    Notebook guía con esqueleto de clases (no funcional por completo).
+    Cheat sheet visual de POO (diagrama conceptual).
+    
+    Indicadores (revisión):
+    Entrega un diseño de clases (puede ser un diagrama dibujado) que muestre correctamente la estructura propuesta.
+    Código en Colab con las clases definidas (incluso si algunos métodos están vacíos) que se ejecuta (al menos la creación de objetos no da error).
+    Tutor revisa y confirma comprensión de cómo la herencia se implementa en el código.
+    
+    
+  Día 5: Buenas prácticas de código (PEP8)
+  Objetivo: Aprender y aplicar los principios de estilo PEP8: nombres claros, indentación, líneas cortas, comentarios, modularidad.
+    
+    Actividades:
+    Ver una charla o video sobre PEP8 en Python (p.ej. “PEP8 – Guía de estilo en Python”).
+    Leer un artículo en español que resuma las recomendaciones clave de PEP8
+    Identificar problemas comunes como líneas muy largas o nombres poco claros
+    Revisar el código escrito en días anteriores y modificarlo según PEP8: renombrar variables con snake_case, ajustar indentación, añadir comentarios y docstrings donde faltan (puede ser guiado, sin copiar código final).
+    Instalar y probar un linter o formatter (por ejemplo, autopep8 o el formateador de Colab) para corregir automáticamente algunos problemas.
+    
+    Recursos:
+    Artículo “Python PEP8: Escribiendo Código Fácil de Leer”
+    Chequeo interactivo: notebook con fragmentos mal formateados para corregir (presentando errores comunes detectados por linters).
+    Video breve sobre convenciones de nombres en Python (camelCase vs snake_case)
+    
+    Indicadores (revisión):
+    El código sigue las convenciones de PEP8 (nombres en snake_case, indentación de 4 espacios, máximos ~79 caracteres por línea, comentarios donde corresponda).
+    Realiza al menos una mini-prueba: por ejemplo, pegar código con errores de estilo y usar autopep8 para ver qué cambia.
+    El tutor verifica que David puede identificar y corregir 3 problemas de estilo (por ejemplo, renombrar una variable genérica, dividir línea muy larga, agregar docstring breve).
+    
+    
+  Día 6: Introducción a GitHub (interfaz web)
+  Objetivo: Manejar GitHub desde la web: crear repositorio, gestionar ramas, commits y README.
+    
+    Actividades:
+    Ver un tutorial en español sobre GitHub básico (por ejemplo, “Introducción a GitHub para principiantes” en YouTube).
+    Seguir los pasos de la guía Hola mundo de GitHub en español para entender qué es un repositorio (una carpeta de proyecto) y qué son archivos README.
+    En la web de GitHub, practicar: crear una rama nueva (branch) en el repositorio que ya existe. Leer la descripción: “La ramificación te permite tener versiones diferentes de un repositorio
+    Subir (mediante la web) el notebook que ha preparado (o parte de él) como un nuevo archivo en la rama. Escribir un mensaje de commit claro (p.ej., “Agrega notebook de clases OOP con ejercicio”).
+    Modificar el archivo README.md desde la interfaz web para documentar brevemente el proyecto (solo texto, sin resolver el código).
+    
+    Recursos:
+    Guía de inicio “Hola Mundo” de GitHub (documentación oficial en español)
+    Video tutorial práctico de GitHub (uso de UI web, búsqueda en español).
+    Diagrama/imagen (esquemático) del flujo básico: repo → rama → commit → merge.
+    
+    Indicadores (revisión):
+    El repositorio de GitHub contiene dos ramas (p.ej. main y otra) y al menos un commit en la rama nueva con el notebook agregado.
+    El tutor verifica (en GitHub) que la rama nueva existe y que el último commit incluye el archivo subido con mensaje descriptivo.
+    El README contiene un párrafo en Markdown explicando el ejercicio realizado (sin resolverlo), revisado por el tutor.
+    
+    
+  Día 7: Integración final y entrega
+  Objetivo: Consolidar todo lo aprendido: crear un notebook con POO en Colab y versionarlo en GitHub siguiendo buenas prácticas.
+    
+    Actividades:
+    En Colab, desarrollar un ejemplo final aplicando clases e herencia: por ejemplo, simular animales en un zoológico usando clases creadas anteriormente. Evitar soluciones completas; incluir comentarios que indiquen dónde el tutor puede ayudar a completar.
+    Verificar que el código respeta PEP8 (nombres y estilo). Añadir comentarios explicativos breves y limpieza de líneas largas.
+    Usar la interfaz web de GitHub para subir este notebook final a la rama del repositorio. Crear un pull request (PR) desde la rama nueva a main (el tutor puede ayudar a finalizar la fusión después de la revisión).
+    Fusionar el PR en main (con el tutor). Actualizar el README final con una descripción del ejemplo ejecutado (nuevamente en español, formato Markdown).
+    
+    Recursos:
+    Ejemplo de notebook final (plantilla con estructura de clases, sin resolver del todo).
+    Checklist de entrega: items de comprobación antes del merge (por ejemplo, “¿Se sigue PEP8?”, “¿Comentarios claros?”, etc.).
+    Video corto sobre pull requests en la web de GitHub (español) y flujo de trabajo de rama a main.
+    
+    Indicadores (revisión):
+    El notebook final se ejecuta en Colab (todo su código corre sin errores).
+    El repositorio GitHub tiene el notebook documentado, un PR marcado como fusionado y un README actualizado. El tutor confirma que el proceso de crear/fusionar ramas se entendió correctamente.
+    Demuestra conocimiento de buenas prácticas: el código en main del repo sigue PEP8, variables con nombres significativos y estructura modular.
 
 Objetivos finales de la semana: Al completar estos siete días, David habrá creado al menos un notebook en Colab aplicando OOP, documentado su proyecto en GitHub (versionado en ramas), y asimilado las buenas prácticas de código Python. Los recursos están apoyados en referencias al material oficial y tutoriales en español
 Cada paso requiere validación del tutor antes de pasar al siguiente nivel.
