@@ -7,7 +7,7 @@ Nota: No te preocupes por el presupuesto: recomendamos muchos recursos gratuitos
   
   En el primer mes afianzarás tus bases de programación en Python (incluyendo OOP y buenas prácticas) y matemáticas esenciales (cálculo y álgebra lineal básicos)   con enfoque en sus aplicaciones en machine learning. También configurarás tu entorno de trabajo (Google Colab, cuentas necesarias) y empezarás a usar             Git/GitHub para versionar tu código y construir tu portafolio.
   
- # ____Semana 1: Configuración del entorno y repaso de Python básico___
+ # ___Semana 1: Configuración del entorno y repaso de Python básico___
   🎯 Meta: Dejar todo listo para aprender eficientemente y repasar los fundamentos de Python que ya conoces.
   
   Configura tu entorno: Asegúrate de tener acceso a Google Colab (solo necesitas tu navegador y cuenta de Google). Crea una cuenta en Kaggle (útil para cursos y    datasets) y en GitHub (para tu código). Si no lo has hecho, instala Git en tu laptop.
